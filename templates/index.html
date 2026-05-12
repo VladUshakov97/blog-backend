@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="{% static 'styles.min.css' %}">
   </head>
   <body>
+    {% for post in most_popular_posts %}
+      {{post.title}}<br>
+      {{post.image_url}}<br>
+      {{post.published_at}}<br>
+    {% endfor %}
     <!--================Header Menu Area =================-->
     <header class="header_area">
       <div class="main_menu">
@@ -64,11 +69,11 @@
             <div class="flex-fill" style="margin-right: 30px;">
               <div class="card blog__slide text-center">
                 <div class="blog__slide__img">
-                  <img class="card-img rounded-0" src="{% static 'img/blog/blog-slider/blog-slide1.png' %}" alt="">
+                  <img class="card-img rounded-0" src="{% static 'media/image_are-you-preparing-your-kids-for-the-real-world.jpg' %}" alt="">
                 </div>
                 <div class="blog__slide__content">
-                  <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-                  <p>2 days ago</p>
+                  <h3><a href="#">Are You Preparing Your Kids for the Real World?</a></h3>
+                  <p>June 4, 2017, 2:09 a.m.</p>
                 </div>
               </div>
             </div>
@@ -76,11 +81,11 @@
             <div class="flex-fill" style="margin-right: 30px;">
               <div class="card blog__slide text-center">
                 <div class="blog__slide__img">
-                  <img class="card-img rounded-0" src="{% static 'img/blog/blog-slider/blog-slide2.png' %}" alt="">
+                  <img class="card-img rounded-0" src="{% static 'media/image_the-biggest-mistake-ever.jpg' %}" alt="">
                 </div>
                 <div class="blog__slide__content">
-                  <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-                  <p>2 days ago</p>
+                  <h3><a href="#">The Biggest Mistake, Ever!</a></h3>
+                  <p>July 26, 2012, 1:57 a.m.</p>
                 </div>
               </div>
             </div>
@@ -88,11 +93,11 @@
             <div class="flex-fill">
               <div class="card blog__slide text-center">
                 <div class="blog__slide__img">
-                  <img class="card-img rounded-0" src="{% static 'img/blog/blog-slider/blog-slide3.png' %}" alt="">
+                  <img class="card-img rounded-0" src="{% static 'media/image_an-open-letter-to-bureaucrats.jpg' %}" alt="">
                 </div>
                 <div class="blog__slide__content">
-                  <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-                  <p>2 days ago</p>
+                  <h3><a href="#">An Open Letter to Bureaucrats (A Must-Read)</a></h3>
+                  <p>May 8, 2013, 3:57 a.m.</p>
                 </div>
               </div>
             </div>
