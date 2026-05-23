@@ -1,6 +1,9 @@
 {% extends 'blog-base.html' %}
 <!DOCTYPE html>
 {% load static %}
+{% block title %}
+  {{post.title}} - Sensive Blog
+{% endblock %}
 
 {% block content %}    
     <!--================ Hero sm Banner start =================-->      
