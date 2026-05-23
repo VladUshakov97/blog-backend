@@ -1,4 +1,5 @@
 {% extends "blog-base.html" %}
+<!DOCTYPE html>
 {% load static %}
 {% block title%}
   Sensive Blog - Home
@@ -30,9 +31,9 @@
               <div class="card blog__slide text-center">
                 <div class="blog__slide__img">
                   {% if post.image_url %}
-                    <img class="card-img rounded-0" src="{{post.image_url}}" alt="">
+                    <img class="card-img rounded-0" src="{{post.image_url}}" alt="{{post.title}}">
                   {% else %}
-                    <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="Изображения по умолчанию для блога">
                   {% endif %}
                 </div>
                 <div class="blog__slide__content">
