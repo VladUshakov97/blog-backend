@@ -14,7 +14,7 @@
             <h1>Blog details</h1>
             <nav aria-label="breadcrumb" class="banner-breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
               </ol>
             </nav>
@@ -68,7 +68,7 @@
                 <div class="single-comment justify-content-between d-flex">
                   <div class="user justify-content-between d-flex">
                     <div class="desc">
-                      <h5><a href="#">{{post.comments.author}}</a></h5>
+                      <h5><a href="#">{{post_comments.author}}</a></h5>
                       <p class="date">{{post_comments.published_at}} </p>
                       <p class="comment">
                           {{post_comments.text}}
