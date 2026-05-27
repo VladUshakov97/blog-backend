@@ -1,6 +1,6 @@
 {% extends 'blog-base.html' %}
-<!DOCTYPE html>
 {% load static %}
+
 {% block title %}
   {{post.title}} - Sensive Blog
 {% endblock %}
@@ -64,26 +64,26 @@
             <div class="comments-area">
               <h4>{{post.comments|length}} Comments</h4>
               {% for post_comments in post.comments %}
-              <div class="comment-list">
-                <div class="single-comment justify-content-between d-flex">
-                  <div class="user justify-content-between d-flex">
-                    <div class="desc">
-                      <h5><a href="#">{{post_comments.author}}</a></h5>
-                      <p class="date">{{post_comments.published_at}} </p>
-                      <p class="comment">
-                          {{post_comments.text}}
-                      </p>
+                <div class="comment-list">
+                  <div class="single-comment justify-content-between d-flex">
+                    <div class="user justify-content-between d-flex">
+                      <div class="desc">
+                        <h5><a href="#">{{post_comments.author}}</a></h5>
+                        <p class="date">{{post_comments.published_at}} </p>
+                        <p class="comment">
+                            {{post_comments.text}}
+                        </p>
+                      </div>
+                    </div>
+                    <div class="reply-btn">
+                            <a href="" class="btn-reply text-uppercase">reply</a> 
                     </div>
                   </div>
-                  <div class="reply-btn">
-                          <a href="" class="btn-reply text-uppercase">reply</a> 
-                  </div>
                 </div>
-              </div>
               {% endfor %}
                                                               
+              </div>
             </div>
-          </div>
 
 
           <!-- Start Blog Post Siddebar -->
